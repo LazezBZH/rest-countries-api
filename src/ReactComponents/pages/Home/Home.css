@@ -1,0 +1,9 @@
+.home {
+  background-color: black;
+  color: white;
+  margin: auto;
+}
+.white-content .home {
+  background-color: rgba(149, 147, 147, 0.229);
+  color: black;
+}

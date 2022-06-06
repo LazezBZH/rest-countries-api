@@ -1,0 +1,11 @@
+header {
+  width: 80%;
+  max-width: 1350px;
+  margin: auto 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+h1 {
+  font-size: 3rem;
+}

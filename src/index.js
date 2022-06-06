@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "./index.css";
+import App from "./ReactComponents/App/App";
+import * as ReactDOM from "react-dom/client";
+
+import ThemeContextWrapper from "./theme/ThemeWrapper";
+
+const container = document.getElementById("root");
+
+// Create a root.
+const root = ReactDOM.createRoot(container);
+
+// Initial render
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ThemeContextWrapper>
+    <App name="Saeloun blog" />
+  </ThemeContextWrapper>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// During an update, there is no need to pass the container again
+root.render(
+  <ThemeContextWrapper>
+    <App name="Saeloun testimonials" />
+  </ThemeContextWrapper>
+);

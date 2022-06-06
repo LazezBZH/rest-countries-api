@@ -1,0 +1,17 @@
+.white-content .toggleButton button {
+  color: black;
+  border: solid 4px rgba(149, 147, 147, 0.625);
+  border-radius: 1rem;
+}
+.toggleButton button {
+  font-size: 1.2rem;
+  padding: 1.5rem 0.5rem;
+  margin: 1rem auto;
+  color: white;
+  background-color: transparent;
+  border: solid 4px rgba(37, 37, 37, 0.785);
+  border-radius: 1rem;
+}
+.toggleButton i {
+  margin: auto 1rem;
+}
