@@ -8,8 +8,11 @@ header {
 }
 h1 {
   font-size: 3rem;
+  color: white;
 }
-
+.white-content h1 {
+  color: black;
+}
 @media (max-width: 900px) {
   header {
     width: 100%;

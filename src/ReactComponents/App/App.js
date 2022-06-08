@@ -5,6 +5,7 @@ import GetAll from "../../utils/getApi";
 import { useEffect, useState } from "react";
 
 import Home from "../pages/Home/Home";
+import Country from "../pages/Country/Country";
 
 import Error from "../pages/Error/Error";
 
@@ -82,6 +83,10 @@ function App() {
                 toSearch={toSearch}
               />
             }
+          />
+          <Route
+            path="/:countryCca3"
+            element={<Country countries={countries} />}
           />
 
           <Route path="*" element={<Error />} />
