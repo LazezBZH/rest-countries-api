@@ -6,27 +6,30 @@
 }
 
 .thumb img {
-  width: 17rem;
-  height: 8rem;
+  width: 20rem;
+  height: 10rem;
   object-fit: cover;
   border-radius: 2px;
 }
 .thumb h2 {
-  font-size: 1rem;
-  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
 }
 .thumb figcaption {
-  width: 15rem;
+  width: 17rem;
+  height: 14.5rem;
   text-align: left;
   padding-left: 1rem;
   margin-top: -1rem;
 }
 .thumb figure {
-  width: 15rem;
+  width: 20rem;
   height: 25rem;
 }
 .thumb p {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+  margin: 0.2rem;
 }
 .p_bold {
   font-weight: bold;
@@ -35,4 +38,42 @@
 .white-content .thumb {
   background-color: white;
   border: solid 2px rgba(149, 147, 147, 0.552);
+}
+
+@media (max-width: 807px) {
+  .thumb img {
+    width: 32rem;
+    height: 15rem;
+  }
+  .thumb h2 {
+    font-size: 2.5rem;
+  }
+  .thumb figcaption {
+    width: 30rem;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .thumb p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .thumb img {
+    width: 85vw;
+    height: 10rem;
+  }
+  .thumb h2 {
+    font-size: 2.5rem;
+  }
+  .thumb figcaption {
+    width: 80vw;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .thumb p {
+    font-size: 1.5rem;
+  }
 }

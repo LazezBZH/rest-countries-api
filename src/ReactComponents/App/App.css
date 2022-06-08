@@ -1,4 +1,10 @@
 .App {
   text-align: center;
   margin: auto;
+  background-color: black;
+  height: 100vh;
+}
+.white-content .App {
+  background-color: rgba(149, 147, 147, 0.229);
+  color: black;
 }

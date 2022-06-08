@@ -15,3 +15,10 @@
 .toggleButton i {
   margin: auto 1rem;
 }
+
+@media (max-width: 900px) {
+  .toggleButton button {
+    font-size: 1rem;
+    padding: 1rem 0rem;
+  }
+}
