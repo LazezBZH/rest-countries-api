@@ -2,14 +2,15 @@
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
-  {
-   "src": "/icons8-globe-terrestre-office-l-72.png",
-   "sizes": "72x72",
-   "type": "image/png",
-   "density": "1.5"
-  }
- ]
-  "start_url": ".",
+    {
+      "src": "/icons8-globe-terrestre-office-l-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5"
+    }
+  ],
+  "start_url": "./",
+  "scope": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

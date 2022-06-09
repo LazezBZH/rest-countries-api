@@ -2,7 +2,7 @@ import "./Country.css";
 import Header from "../../components/Header/Header";
 import { Link, useParams } from "react-router-dom";
 
-export default function Details({ countries }) {
+export default function Country({ countries }) {
   const { countryCca3 } = useParams();
 
   const country = countries.find((country) => country.cca3 === countryCca3);
@@ -95,12 +95,32 @@ export default function Details({ countries }) {
                 </p>
               </div>
             </div>
-            <p className="border">
-              <span className="country-bold">
-                {borderList.length > 1 ? "Border countries" : "Border country"}:{" "}
-              </span>
-              {borderList.join(", ")}
-            </p>
+
+            <div className="border">
+              <p className="country-bold">
+                {borderList.length > 1 ? "Border countries" : "Border country"}:
+              </p>
+              <div className="border_link">
+                {country.borders ? (
+                  country.borders.map((code) => {
+                    const borderLink = countries.find(
+                      (country) => country.cca3 === code
+                    );
+                    return (
+                      <p key={borderLink.name.common} className="border_btn">
+                        <Link key={code} to={"/" + code}>
+                          <span className="font-bold">
+                            {borderLink.name.common}
+                          </span>
+                        </Link>
+                      </p>
+                    );
+                  })
+                ) : (
+                  <span>None</span>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>

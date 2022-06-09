@@ -53,11 +53,12 @@ function App() {
     if (toSearch.searchTerm) {
       setSelectedCountries((prevCountries) =>
         prevCountries.filter((country) => {
-          const name = country.name.official.toLowerCase();
-
+          const name = country.name.common.toLowerCase();
+          const otherName = country.name.official.toLowerCase();
           const search = toSearch.searchTerm.toLowerCase();
 
-          if (name.startsWith(search)) return true;
+          if (name.startsWith(search) || otherName.startsWith(search))
+            return true;
 
           //then filtered from diacritics
           const toFilter = name.split(" ");

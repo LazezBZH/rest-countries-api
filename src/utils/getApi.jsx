@@ -6,6 +6,9 @@ export default class GetData {
       const response = await fetch("https://restcountries.com/v3.1/all");
       const data = await response.json();
       console.log(data);
+      console.log(
+        "Raphaël si tu me lis: 'c'est pas bien de fouiller dans le code des autres pour voir s'ils ne mettent pas des console.log plus drôles que les tiens!"
+      );
       return data;
     } catch (error) {
       console.error(error);
