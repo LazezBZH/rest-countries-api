@@ -55,7 +55,7 @@
 .filters {
   display: flex;
   justify-content: space-between;
-  margin: auto 10%;
+  margin: auto 10% 1rem 10%;
 }
 .white-content .label select {
   color: black;
