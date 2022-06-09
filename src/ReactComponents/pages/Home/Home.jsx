@@ -12,6 +12,18 @@ export default function Home({ countries, handleChange, toSearch }) {
 
   return (
     <div className="home">
+      <div className="loader">
+        <ul className="radar">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <Header />
 
       <div className="filters">

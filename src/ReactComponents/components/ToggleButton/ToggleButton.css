@@ -1,7 +1,6 @@
 .white-content .toggleButton button {
   color: black;
   border: solid 4px rgba(149, 147, 147, 0.625);
-  border-radius: 1rem;
 }
 .toggleButton button {
   font-size: 1.2rem;

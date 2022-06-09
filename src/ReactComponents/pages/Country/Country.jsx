@@ -34,7 +34,7 @@ export default function Details({ countries }) {
     });
   }
   return (
-    <>
+    <div className="countries">
       <Header />
       <div className="oneCountry">
         <Link to="/">
@@ -95,7 +95,7 @@ export default function Details({ countries }) {
                 </p>
               </div>
             </div>
-            <p>
+            <p className="border">
               <span className="country-bold">
                 {borderList.length > 1 ? "Border countries" : "Border country"}:{" "}
               </span>
@@ -104,6 +104,6 @@ export default function Details({ countries }) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -1,5 +1,22 @@
-.oneCountry button {
+.countries {
+  max-height: 100%;
+  min-height: 100vh;
   background-color: black;
+  color: white;
+  margin: auto;
+}
+
+.white-content .countries {
+  background-color: rgba(149, 147, 147, 0.229);
+  color: black;
+}
+.oneCountry {
+  padding-bottom: 2rem;
+}
+.oneCountry button {
+  background-color: transparent;
+  border: solid 4px rgba(37, 37, 37, 0.785);
+  border-radius: 1rem;
   color: white;
   padding: 0.7rem 0.7rem;
   font-size: 1.5rem;
@@ -42,4 +59,90 @@
 }
 .white-content .country_details {
   color: black;
+}
+.white-content .oneCountry button {
+  color: black;
+  border: solid 4px rgba(149, 147, 147, 0.625);
+}
+.border {
+  border-top: solid 4px rgba(37, 37, 37, 0.785);
+  border-bottom: solid 4px rgba(37, 37, 37, 0.785);
+  padding: 1rem 0;
+}
+.white-content .border {
+  border-top: solid 4px rgba(149, 147, 147, 0.625);
+  border-bottom: solid 4px rgba(149, 147, 147, 0.625);
+}
+
+@media (max-width: 1000px) {
+  .country_details {
+    flex-direction: column;
+
+    margin: 3rem auto;
+  }
+  .country_details-img {
+    width: 90%;
+    margin: auto;
+  }
+  .country_details-img img {
+    width: 100%;
+  }
+  .country_details-txt {
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .country_details-both {
+    flex-direction: column;
+    margin: auto;
+  }
+  .country_details-txt h2 {
+    font-size: 4rem;
+    margin: 0 auto;
+  }
+  .country_details-txt p {
+    width: 80%;
+    font-size: 1.5rem;
+    margin: 0.5rem auto;
+  }
+  .border {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .country_details-img {
+    width: 90%;
+    margin: auto;
+  }
+  .country_details-img img {
+    width: 100%;
+  }
+
+  .country_details-txt h2 {
+    font-size: 3rem;
+  }
+  .country_details-txt p {
+    width: 90%;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 435px) {
+  .country_details-img {
+    width: 90%;
+    margin: auto;
+  }
+  .country_details-img img {
+    width: 100%;
+  }
+
+  .country_details-txt h2 {
+    font-size: 2rem;
+  }
+  .country_details-txt p {
+    width: 100%;
+    font-size: 1.3rem;
+  }
 }
