@@ -53,14 +53,12 @@ export default function Home({ countries, handleChange, toSearch }) {
         </div>
       </div>
 
-      <div className="gallery_container">
-        <div className="gallery">
-          {countries.length >= 1 || toSearch.selectedRegion === "all"
-            ? countries.map((country) => {
-                return <Thumb key={country.name.official} country={country} />;
-              })
-            : "No countries found"}
-        </div>
+      <div className="gallery">
+        {countries.length >= 1 || toSearch.selectedRegion === "all"
+          ? countries.map((country) => {
+              return <Thumb key={country.name.official} country={country} />;
+            })
+          : "No countries found"}
       </div>
     </div>
   );

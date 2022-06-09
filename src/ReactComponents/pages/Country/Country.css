@@ -12,6 +12,8 @@
 }
 .oneCountry {
   padding-bottom: 2rem;
+  max-width: 1700px;
+  margin: auto;
 }
 .oneCountry button {
   background-color: transparent;
@@ -39,6 +41,7 @@
 }
 .country_details-txt {
   width: 50%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
