@@ -72,7 +72,7 @@ function App() {
   }, [toSearch, countries]);
 
   return (
-    <div className="App">
+    <div className="App" id="App">
       <BrowserRouter>
         <Routes>
           <Route

@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function Thumb({ country }) {
   return (
-    <Link to={"/" + country.cca3}>
+    <Link
+      to={"/" + country.cca3}
+      onClick={() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      }}
+    >
       <figure className="thumb">
         <img
           className="thumb_img"

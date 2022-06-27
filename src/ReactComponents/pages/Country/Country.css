@@ -90,6 +90,7 @@
 }
 .border_link p {
   margin: 0.4rem;
+  padding: 0 0.3rem;
 }
 .border_link p a {
   text-decoration: none;
@@ -97,8 +98,9 @@
 }
 .border_btn {
   border: solid 3px rgba(67, 67, 67, 0.779);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
+
 .white-content .border_btn {
   border: solid 3px rgba(149, 147, 147, 0.625);
 }

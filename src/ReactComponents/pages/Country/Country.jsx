@@ -34,7 +34,7 @@ export default function Country({ countries }) {
     });
   }
   return (
-    <div className="countries">
+    <div className="countries" id="countries">
       <Header />
       <div className="oneCountry">
         <Link to="/">
@@ -108,7 +108,17 @@ export default function Country({ countries }) {
                     );
                     return (
                       <p key={borderLink.name.common} className="border_btn">
-                        <Link key={code} to={"/" + code}>
+                        <Link
+                          key={code}
+                          to={"/" + code}
+                          onClick={() => {
+                            window.scrollTo({
+                              top: 0,
+                              left: 0,
+                              behavior: "smooth",
+                            });
+                          }}
+                        >
                           <span className="font-bold">
                             {borderLink.name.common}
                           </span>
