@@ -1,6 +1,6 @@
 import "./Country.css";
 import Header from "../../components/Header/Header";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 export default function Country({ countries }) {
   const { countryCca3 } = useParams();
@@ -33,13 +33,17 @@ export default function Country({ countries }) {
       return `${country.borders[key]}`;
     });
   }
+  const navigate = useNavigate();
+
   return (
     <div className="countries" id="countries">
       <Header />
       <div className="oneCountry">
-        <Link to="/">
-          <button className="country_btn">&#x21E6; Back</button>
-        </Link>
+        {/* <Link to="/"> */}
+        <button className="country_btn" onClick={() => navigate(-1)}>
+          &#x21E6; Back
+        </button>
+        {/* </Link> */}
         <div className="country_details">
           <div className="country_details-img">
             <img src={country.flags.svg} alt="" />
