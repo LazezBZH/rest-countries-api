@@ -1,5 +1,6 @@
 import Thumb from "../../components/Thumb/Thumb";
 import Header from "../../components/Header/Header";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 export default function Home({ countries, handleChange, toSearch }) {
@@ -24,8 +25,8 @@ export default function Home({ countries, handleChange, toSearch }) {
           <li></li>
         </ul>
       </div>
+      <div id="up"></div>
       <Header />
-
       <div className="filters">
         <input
           type="search"
@@ -52,7 +53,6 @@ export default function Home({ countries, handleChange, toSearch }) {
           </label>
         </div>
       </div>
-
       <div className="gallery">
         {countries.length >= 1 || toSearch.selectedRegion === "all"
           ? countries.map((country) => {
@@ -60,6 +60,22 @@ export default function Home({ countries, handleChange, toSearch }) {
             })
           : "No countries found"}
       </div>
+      <Link
+        to={"/"}
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
+        <button className="homeBtn1">&#x1F199;</button>
+      </Link>
+      <Link
+        to={"/"}
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
+        <button className="homeBtn2">&#x1F199;</button>
+      </Link>
     </div>
   );
 }

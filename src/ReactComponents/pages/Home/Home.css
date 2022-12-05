@@ -226,6 +226,25 @@
   }
 }
 
+.homeBtn1 {
+  position: fixed;
+  bottom: 2%;
+  left: 3%;
+}
+.homeBtn2 {
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+}
+.homeBtn1,
+.homeBtn2 {
+  cursor: pointer;
+  background-color: rgb(36, 36, 36);
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+
 /*responsive*/
 @media (max-width: 565px) {
   .home input {
