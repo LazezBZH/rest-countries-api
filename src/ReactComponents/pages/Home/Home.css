@@ -225,7 +225,22 @@
     height: 0%;
   }
 }
-
+@-webkit-keyframes invisible-btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes invisible-btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .homeBtn1 {
   position: fixed;
   bottom: 2%;
@@ -243,6 +258,11 @@
   font-size: 1.5rem;
   padding: 0.2rem;
   border-radius: 0.3rem;
+  -webkit-animation: invisible-btn 5ms linear forwards;
+  animation: invisible-btn 5ms linear forwards;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  opacity: 0;
 }
 
 /*responsive*/

@@ -40,8 +40,23 @@ export default function Country({ countries }) {
       <Header />
       <div className="oneCountry">
         {/* <Link to="/"> */}
-        <button className="country_btn" onClick={() => navigate(-1)}>
-          &#x21E6; Back
+        <button className="country_btn">
+          <Link
+            to="/home"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+          >
+            &#x21E6; Home
+          </Link>
+        </button>
+        <button
+          className="country_btn"
+          onClick={() => {
+            navigate(-1);
+          }}
+        >
+          &#x21E6; Previous
         </button>
         {/* </Link> */}
         <div className="country_details">

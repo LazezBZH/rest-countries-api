@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 import Home from "../pages/Home/Home";
 import Country from "../pages/Country/Country";
+import Homeback from "../pages/Homeback/Homeback";
 
 import Error from "../pages/Error/Error";
 
@@ -79,6 +80,16 @@ function App() {
             path="/"
             element={
               <Home
+                countries={selectedCountries}
+                handleChange={handleChange}
+                toSearch={toSearch}
+              />
+            }
+          />
+          <Route
+            path="/home"
+            element={
+              <Homeback
                 countries={selectedCountries}
                 handleChange={handleChange}
                 toSearch={toSearch}

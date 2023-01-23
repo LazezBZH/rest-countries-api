@@ -27,6 +27,13 @@
   padding: 0.7rem 0.7rem;
   font-size: 1.5rem;
 }
+.oneCountry button a {
+  text-decoration: none;
+  color: white;
+}
+.country_btn {
+  margin: 0 1rem;
+}
 .country-bold {
   font-weight: bold;
   margin-right: 1rem;
@@ -71,6 +78,9 @@
 .white-content .oneCountry button {
   color: black;
   border: solid 4px rgba(149, 147, 147, 0.625);
+}
+.white-content .oneCountry button a {
+  color: black;
 }
 .border {
   border-top: solid 4px rgba(37, 37, 37, 0.785);

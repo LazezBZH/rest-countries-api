@@ -1,7 +1,7 @@
 import Thumb from "../../components/Thumb/Thumb";
 import Header from "../../components/Header/Header";
 import { Link } from "react-router-dom";
-import "./Home.css";
+import "./Homeback.css";
 
 export default function Home({ countries, handleChange, toSearch }) {
   countries.sort((a, b) => {
@@ -13,18 +13,6 @@ export default function Home({ countries, handleChange, toSearch }) {
 
   return (
     <div className="home">
-      <div className="loader" id="loader">
-        <ul className="radar">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
       <div id="up"></div>
       <Header />
       <div className="filters">
@@ -74,7 +62,7 @@ export default function Home({ countries, handleChange, toSearch }) {
           window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
         }}
       >
-        <button className="homeBtn2"> &#x1F199;</button>
+        <button className="homeBtn2">&#x1F199;</button>
       </Link>
     </div>
   );
